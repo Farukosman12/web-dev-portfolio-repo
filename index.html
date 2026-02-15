@@ -3,17 +3,650 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web-dev-portfolio repo</title>
+    <title>web dev portfolio acb</title>
+    <style>
+        /* part---1 */
+
+        .nav-header{
+            max-width: 1600px;
+            height: 92px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            background-color: black;
+            flex-wrap: wrap;
+
+        }
+        .nav-title{
+            font-size: 24px;
+            width: 219px;
+            height: 32px;
+            /* border: 1px solid aqua; */
+
+        }
+        .nav-title-color{
+            color: magenta;
+        }
+        .nav-list{
+            display: flex;
+            text-decoration: none;
+            gap: 32px;
+            list-style: none;
+            /* border: 1px solid aqua; */
+            width: 218px;
+            height: 19px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+            /* border: 1px solid aqua; */
+        }
+        .btn-primay{
+            /* border: 1px solid aqua; */
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            gap: 5px;
+            color: white;
+            /* border: none; */
+            padding: 16px 24px;
+            border-radius: 25px;
+            /* width: 135px; */
+            /* height: 44px; */
+            /* margin-top: 30px; */
+            background-image: linear-gradient(to top right, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+        }
+
+        /* banner part-2 */
+
+        .section-container{
+            background-image: url('../web-dev-portfolio acb/images/hero-bg.png'), url('../web-dev-portfolio acb/images/microphone.png');
+            max-width: 1600px;
+            height: 720px;
+            /* background-position: center, 100% 50%; */
+            /* background-repeat: no-repeat, no-repeat; */
+        }
+        .secttion-banner-title{
+            text-align: center;
+            color: white;
+    
+        }
+        .nav-banner-img1{
+            width:350px;
+            height: 350px;
+            margin-top: 101px;
+            /* border: 1px solid aqua; */
+            
+        }
+        .nav-banner-img2{
+            width: 200px;
+            height: 200px;
+            /* border: 1px solid aqua; */
+            margin-top: -350px;
+            margin-bottom: 100px;
+            
+        }
+        .btn-primary-1{
+            border-radius: 25px;
+            font-size: 20px;
+            padding: 12px 10px;
+            color: white;
+            background-image: linear-gradient(to top right, #F7E93F 0%, #F9797A 26%, #FB09B4 51%, #9100F8 100%); */
+        }
+        .btn-new{
+            margin-right: -200px;
+            margin-top: -380px;
+        }
+        .btn-primary-n{
+            background-color:#00ff88;
+            border-radius: 25px;
+            padding: 12px 16px;
+            font-size: 20px;
+        }
+        .nav-title-des{
+            margin-top: 380px;
+        }
+        .btn-primary-img{
+            width: 17px;
+            height: 17px;
+        }
+        .btn-primary-2{
+            color: #00ff88;
+            border-radius: 25px;
+            font-size: 20px;
+            background-color: rgb(15, 15, 15);
+            padding: 12px 10px;
+            gap: 5px;
+            border: 1px solid #00ff88;
+            /* background-image: linear-gradient(to top right, #F7E93F 0%, #F9797A 26%, #FB09B4 51%, #9100F8 100%); */
+        }
+
+        .container-1{
+            width: 1600px;
+            height: 646px;
+            background-color: black;
+        }
+        .container-3{
+            display: flex;
+            text-align: center;
+        }
+        .container-abouts{
+            width: 1200px;
+            height: 222px;
+            /* border: 1px solid aqua; */
+            color: #FFFFFF;
+            margin: 50px 200px 160px 200px;
+        }
+        .container-title{
+            font-size: 46px;
+            color: white;
+            /* border: 1px solid aqua; */
+            width: 1200px;
+            height: 58px;
+            
+        }
+        .container-user{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid aqua; */
+            color: #00ff88;
+            width: 1200px;
+            height: 94px;
+            gap: 100px;
+            margin-top: 120px;
+        }
+        .con-description{
+            color: #a5a0a0;
+        }
+
+        /* part----4 */
+
+        .container-w{
+            width: 1600px;
+            height: 1200px;
+            background-color: #230E3D;
+        }
+        .media-abouts{
+            display: flex;
+                     
+        }
+        .media-description-about{
+            color: white;
+            justify-content: center;
+            margin: 50px 200px 120px 200px;
+            
+        }
+        .media-title{
+            align-items: center;
+            text-align: center;
+            font-size: 46px;
+            color: white;
+
+        }
+        .media-description{
+            width: 1200px;
+            height: 480px;
+            display: flex;
+            gap: 30px;
+        }
+        .media-description-1{
+            width: 380px;
+            height: 480px;
+            gap: 30px;
+            padding: 40px 30px;
+            border-radius: 30px;
+            box-shadow: 4px 9px 9px 9px rgba(9, 2, 20, 0.4);
+            
+        }
+        .media-description-2{
+            width: 790px;
+            height: 480px;
+            gap: 30px;
+        }
+        .media-sub-description-1{
+            width: 790px;
+            height: 200px;
+            gap: 16px;
+            padding: 40px 40px;
+            border-radius: 40px;
+            box-shadow: 4px 9px 9px 9px rgba(9, 2, 20, 0.4);
+        }
+        .media-sub-description-2{
+            width: 790px;
+            height: 200px;
+            gap: 16px;
+            padding: 40px 40px;
+            border-radius: 40px;
+            margin-top: 30px;
+            box-shadow: 4px 9px 9px 9px rgba(9, 2, 20, 0.4);
+        }
+        .media-description-3{
+            display: flex;
+            width: 1200px;
+            height: 273px;
+            gap: 30px;
+            margin-top: 180px;
+        }
+        .media-sub-description-3{
+            width: 790px;
+            height: 210px;
+            padding: 40px 40px;
+            border-radius: 40px;
+            box-shadow: 4px 9px 9px 9px rgba(9, 2, 20, 0.4);
+        }
+        .media-sub-description-4{
+            width: 380px;
+            height: 210px;
+            padding: 40px 40px;
+            border-radius: 40px;
+            box-shadow: 4px 9px 9px 9px rgba(9, 2, 20, 0.4);
+        }
+        /* part---5 */
+
+        .container-episode{
+            width: 1600px;
+            height: 1276px;
+            background-color: #1A0B2E;
+            color: white;
+            display: flex;
+        }
+        .episode-heading{
+            text-align: center;
+            font-size: 48px;
+        }
+        .container-episode-description{
+            width: 1200px;
+            height: 538px;
+            /* border: 3px solid blue; */
+            display: flex;
+            gap: 30px;
+            margin: 35px 200px 50px 200px;
+        }
+        .con-episode{
+            width: 380px;
+            height: 440px;
+            /* border: 1px solid aqua; */
+            border-radius: 30px;
+            background-color: #231633;
+        }
+        .con-pic{
+            width: 380px;
+            height: 214px;
+            border-radius: 30px;
+
+        }
+        .episode-button-1{
+            text-align: center;
+            margin-top: -150px;
+        }
+        .episode-button-2{
+            margin-top: -42px;
+        }
+        .episode-description-title{
+            width: 380px;
+            height: 226px;
+            /* border: 1px solid aqua; */
+            margin-top: 120px;
+        }
+        .episode-p{
+            color: rgb(240, 219, 219);
+        }
+        .video-min{
+            align-items: center;
+            display: flex;
+            gap: 5px;
+            color: #00ff88;
+        }
+
+        /* part-6 */
+
+        .episode-speech-1{
+            width: 1200px;
+            height: 378px;
+            margin: 120px 200px 120px 200px;
+        }
+        .episode-speech-2{
+            width: 1200px;
+            height: 280px;
+
+        }
+        .episode-title{
+            text-align: center;
+            font-size: 46px;
+            width: 1200px;
+            height: 58px;
+        }
+        .episode-speech-3{
+            width: 1200px;
+            height: 280px;
+            display: flex;
+            gap: 30px;
+            border-radius: 30px;
+            background-color: #231633;
+            
+        }
+        .episode-speech-4{
+            width: 896px;
+            height: 183px;
+            /* border: 1px solid aqua; */
+            margin: 48px 40px 48px 48px;
+        }
+        .social-icons{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            /* margin-top: 30px; */
+        }
+        .media-pic{
+            width: 200px;
+            height: 200px;
+            margin: 40px 40px;
+            border-radius: 50%;
+        }
+        .footer-head{
+            width: 1600px;
+            height: 412px;
+            color: white;
+            background-image: url(./images/footer-bg.png);
+            display: flex;
+            /* border: 1px solid rgb(3, 4, 4); */
+        }    
+        .footer-abouts{
+            width: 1360px;
+            height: 172px;
+            /* border: 2px solid #00ff88; */
+            text-align: center;
+            margin: 120px 120px 120px  120px;
+        }
+        .footer-description{
+            width: 544px;
+            height: 24px;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            justify-content: space-between;
+            margin: 32px 408px 32px 408px;
+            /* border: 1px solid #00ff88; */
+        }
+        .footer-media-a{
+            width: 87px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            /* border: 1px solid #00ff88; */
+        }
+        .footer-media-b{
+            width: 152px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            /* border: 1px solid #00ff88; */
+        }
+        .footer-media-c{
+            width: 99px;
+            height: 24px;
+            display: flex;
+            align-items: center; */
+            text-align: center;
+            gap: 8px;
+            /* border: 1px solid #00ff88; */
+        }
+        .footer-media-d{
+            width: 86px;
+            height: 24px;
+            display: flex;
+            align-items: center; */
+            text-align: center;
+            gap: 8px;
+            /* border: 1px solid #00ff88; */
+        }
+        .footer-h1{
+            width: 410px;
+            height: 60px;
+            /* border: 2px solid #00ff88; */
+            margin: 0px 475px 32px 475px; 
+        }
+        .footer-color{
+            color: #FB09B4;
+        }
+        .footer-y{
+        width: 1360px;
+        height: 24px;
+        /* border: 1px solid aqua; */
+        }
+        .footer-pic{
+            width: 20px;
+            height: 20px;
+            /* border: 1px solid aqua; */
+        }
+    </style>
 </head>
 <body>
- <header>
-
- </header>
- <main>
-
- </main>
- <footer>
-    
- </footer>   
+    <header class="header">
+        <nav class="nav-header">
+            <h3 class="nav-title">Tech<span class="nav-title-color">Wave</span></h3>
+            <div>
+                <ul class="nav-list">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Episodes</a></li>
+                    <li><a href="">Host</a></li>
+                </ul>
+            </div>
+            <button class="btn-primay">Subscribe<img src="../web-dev-portfolio acb/images/ArrowRight.png" alt=""></button>
+        </nav>
+    </header>
+    <main>
+        <section class="section-container">
+            <section class="section-banner">
+                <nav class="secttion-banner-title">
+                    <img class="nav-banner-img1" src="../web-dev-portfolio acb/images/hero-circle.png" alt="">
+                    <div class="nav-title-des1">
+                        <img class="nav-banner-img2" src="../web-dev-portfolio acb/images/microphone.png" alt="">
+                        <div class="btn-new">
+                            <button class="btn-primary-n">NEW</button>
+                        </div>
+                        <div class="nav-title-des">
+                            <h2>TechWave</h2>
+                            <p>Your daily dose of tech insights, producitivity hacks, and persomal growth.</p>
+                            <button class="btn-primary-1"><img class="btn-primary-img" src="../web-dev-portfolio acb/images/spotify.png" alt=""> Listen On Spotify</button>
+                            <button class="btn-primary-2"><img class="btn-primary-img" src="../web-dev-portfolio acb/images/message.png" alt=""> Subscribe</button>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </section>
+        <!-- <section class="container-1"> -->
+            <section class="container-2">
+                <nav class="container-3">
+                    <div class="container-abouts">
+                        <h1 class="container-title">About The Podcast</h1>
+                        <p class="episode-p">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.
+                            <br>We break down complex tech topics into easily digestible insights, explore productivity strategies that actually work,<br>
+                            and share stories of personal growth from industry leaders.</p>
+                        <p class="episode-p">Join thousands of young professionals who are using TechWave to enhance their tech knowledge and personal development.</p>
+                        <div class="container-user">
+                            <div>
+                                <h1>150K+</h1>
+                                <p class="con-description">MONTHLY LISTENERS</p>
+                            </div>
+                            <div>
+                                <h1>200+</h1>
+                                <p class="con-description">EPISODES PUBLISHED</p>
+                            </div>
+                            <div>
+                                <h1>4.9*</h1>
+                                <p class="con-description">AVERAGE RATING</p>
+                            </div>
+                            <div>
+                                <h1>50+</h1>
+                                <p class="con-description">INDUSTRY EXPERTS</p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        <!-- </section> -->
+        <!-- <section class="container-w"> -->
+            <section class="container-x">
+                <nav class="media-abouts">
+                    <div class="media-description-about">
+                        <h1 class="media-title">Why Choose TechWave</h1>
+                        <div class="media-description">
+                            <div class="media-description-1">
+                                <img class="mobile-friendly-img" src="../web-dev-portfolio acb/images/headphone.png" alt="">
+                                <h1>Primium Audio Quality</h1>
+                                <p class="episode-p">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listining across all devices and platform.</p>
+                            </div>
+                            <div class="media-description-2">
+                                <div class="media-sub-description-1">
+                                    <img class="mobile-friendly-img" src="../web-dev-portfolio acb/images/device.png" alt="">
+                                    <h1>Mobile Friendly</h1>
+                                    <p class="episode-p">Listen on the go with seamless mobile experience and offline downloads.</p>
+                                </div>
+                                <div class="media-sub-description-2">
+                                    <img class="global-community-img" src="../web-dev-portfolio acb/images/location.png" alt="">
+                                    <h1>Global Community</h1>
+                                    <p class="episode-p">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" media-description-3">
+                            <div class="media-sub-description-3">
+                                <img src="../web-dev-portfolio acb/images/device.png" alt="">
+                                <h1>Exclusive Interviews</h1>
+                                <p class="episode-p">Get unprecedented access to industry titans, startup funders, and tech visionaries. Our host secures exclusive conversations you wont
+                                find anywhere else. diving deep into their journeys, failures, and success strategies.</p>
+                            </div>
+                                <div class="media-sub-description-4">
+                                    <img src="../web-dev-portfolio acb/images/resource.png" alt="">
+                                    <h1>Rich Resources</h1>
+                                    <p class="episode-p">Access show notes, transcripts, and additional learning materials for every episode.
+                                </div>
+                            </div>
+                        </div>
+                    <div>
+                </nav>
+            </section>
+        <!-- </section> -->
+        <!-- <section class="container-episode"> -->
+                <nav class="episode-abouts">
+                   <h1 class="episode-heading">Featured Episodes</h1>
+                   <div class="container-episode-description">
+                       <div class="episode-items">
+                           <div class="con-episode">
+                                <img class="con-pic" src="../web-dev-portfolio acb/images/con-two.webp" alt="">
+                                <div class="episode-button-1">
+                                     <img src="../web-dev-portfolio acb/images/hero-circle.png" width="60" height="60" alt="">
+                                    <div class="episode-button-2">
+                                        <img class="btn-color" src="../web-dev-portfolio acb/images/youtube-podcast.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="episode-description-title">
+                                    <h3>The Future of AI in Everyday Life</h3>
+                                    <p class="episode-p">Exploring how artificial intelligence is transforming our daily routinges and what to expect in the next decade.</p>
+                                    <p class="video-min"><img src="../web-dev-portfolio acb/images/clock.png" alt="">51 min</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="episode-items">
+                            <div class="con-episode">
+                                <img class="con-pic" src="../web-dev-portfolio acb/images/con-two.webp" alt="">
+                                <div class="episode-button-1">
+                                    <img src="../web-dev-portfolio acb/images/hero-circle.png" width="60" height="60" alt="">
+                                    <div class="episode-button-2">
+                                        <img class="btn-color" src="../web-dev-portfolio acb/images/youtube-podcast.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="episode-description-title">
+                                    <h3>Building Better Habbits for Remote Work</h3>
+                                    <p class="episode-p">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
+                                    <p class="video-min"><img src="../web-dev-portfolio acb/images/clock.png" alt="">35 min</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="episode-items">
+                            <div class="con-episode">
+                                <img class="con-pic" src="../web-dev-portfolio acb/images/con-two.webp" alt="">
+                                <div class="episode-button-1">
+                                    <img src="../web-dev-portfolio acb/images/hero-circle.png" width="60" height="60" alt="">
+                                    <div class="episode-button-2">
+                                        <img class="btn-color" src="../web-dev-portfolio acb/images/youtube-podcast.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="episode-description-title">
+                                    <h3>Career Growth in Tech: A Roadmap</h3>
+                                    <p class="episode-p">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
+                                    <p class="video-min"><img src="../web-dev-portfolio acb/images/clock.png" alt="">51 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="episode-speech-1">
+                        <div class="episode-speech-2">
+                            <h1 class="episode-title">Meet The Host</h1>
+                            <div class="episode-speech-3">
+                                <div class="media-pic">
+                                    <img src="../web-dev-portfolio acb/images/host.png" alt="">
+                                </div>
+                                <div class="episode-speech-4">
+                                    <h1>Alex Kumar</h1>
+                                    <p class="episode-p">Tech enthusiast, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years,
+                                        working with startups and Fortune 500 companies. Though TechWave, Alex shares insights from industry leaders adn
+                                        practical advice for anyone looking to grow in tech.
+                                    </p>
+                                    <div class="social-icons">
+                                        <div>
+                                            <img src="../web-dev-portfolio acb/images/linkedin.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="../web-dev-portfolio acb/images/x.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="../web-dev-portfolio acb/images/instagram.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img src="../web-dev-portfolio acb/images/youtube.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav> 
+        <!-- </section> -->
+    </main>
+    <!-- <footer class="footer-head"> -->
+        <div class="footer-abouts">
+            <h1 class="footer-h1">Tech<spam class="footer-color">Wave</spam></h1>
+            <div class="footer-description">
+                <div class="footer-media-a">
+                    <img class="footer-pic" src="../web-dev-portfolio acb/images/spotify.png" alt="">
+                    <div>
+                        <p>Spotify</p>
+                    </div>
+                </div>
+                <div class="footer-media-b">
+                    <img class="footer-pic" src="../web-dev-portfolio acb/images/apple-podcast.png" alt="">
+                    <div><p>Apple Prodcast</p></div>
+                </div>
+                <div class="footer-media-c">
+                    <img class="footer-pic" src="../web-dev-portfolio acb/images/youtube-podcast.png" alt="">
+                    <div><p>YouTube</p></div>
+                </div>
+                <div class="footer-media-d">
+                    <img class="footer-pic" src="../web-dev-portfolio acb/images/twitter.png" alt="">
+                    <div><p>Twitter</p></div>
+                </div>
+            </div>
+            <p class="footer-y">@2026 TechWave Podcast. All rights reserved.</p>
+        </div>
+    <!-- </footer> -->
 </body>
 </html>
